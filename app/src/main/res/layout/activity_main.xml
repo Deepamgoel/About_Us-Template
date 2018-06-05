@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:contentDescription="@string/background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/atlantis_space_shuttle" />
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/header"
+        android:layout_margin="@dimen/margin"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="@color/primaryText"
+        android:textSize="16sp" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/web"
+        android:layout_below="@id/description" />
+
+    <TextView
+        android:id="@+id/web"
+        style="@style/Contact"
+        android:layout_above="@id/map"
+        android:onClick="web"
+        android:text="@string/website" />
+
+    <TextView
+        android:id="@+id/map"
+        style="@style/Contact"
+        android:layout_alignParentBottom="true"
+        android:onClick="map"
+        android:text="@string/map" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">About Us Template</string>
+
+    <string name="background">Background</string>
+
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="instagram">instagram</string>
+
+    <string name="logo">Logo</string>
+    <string name="title">SWOOSH..!!</string>
+    <string name="subtitle">The Speed You Deserve</string>
+
+    <string name="website">www.blueorigin.com</string>
+    <string name="map" >21218 76th Ave S, Kent, WA 98032, USA</string>
+
+    <string name="description">Lorem ipsum dolor sit amet, iriure quaeque an mel, lucilius sententiae eloquentiam eu his. His at natum everti, eu bonorum neglegentur pro. Vidisse inermis legendos ex pri, sed noster facilisi at.</string>
+
+</resources>

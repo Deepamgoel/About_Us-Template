@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageButton
+        style="@style/SocialButtons"
+        android:contentDescription="@string/facebook"
+        android:paddingEnd="@dimen/padding"
+        android:paddingStart="0dp"
+        android:onClick="facebook"
+        android:src="@drawable/ic_flogo_rgb_hex_blk_58" />
+
+    <ImageButton
+        style="@style/SocialButtons"
+        android:contentDescription="@string/twitter"
+        android:onClick="twitter"
+        android:src="@drawable/ic_twitter_logo_whiteonimage" />
+
+    <ImageButton
+        style="@style/SocialButtons"
+        android:contentDescription="@string/instagram"
+        android:onClick="instagram"
+        android:src="@drawable/ic_ig_glyph_fill" />
+
+</LinearLayout>
